@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&S Encanto | Doces, Cestas e Mimos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FFF5F7; /* Fundo rosa bebê bem clarinho */
+            color: #4A3B42; /* Texto marrom acinzentado elegante */
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #F8BBD0; /* Rosa claro do logo */
+            padding: 15px 20px;
+            text-align: center;
+            border-bottom: 2px solid #D4AF37; /* Dourado */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #A9325B; /* Rosa escuro/Vinho */
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo-text span {
+            font-size: 14px;
+            display: block;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: #777;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            /* Imagem de fundo de doces/cesta */
+            background: linear-gradient(rgba(248, 187, 208, 0.8), rgba(255, 245, 247, 0.9)), url('https://images.unsplash.com/photo-1549465220-1a8b9238cd48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #A9325B;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .hero p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #4A3B42;
+            font-weight: 400;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25D366; /* WhatsApp */
+            color: white;
+            padding: 16px 40px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            font-size: 16px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: transform 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            transform: scale(1.05);
+        }
+
+        /* Seção de Produtos */
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #A9325B;
+            margin: 50px 0 30px 0;
+            font-weight: 700;
+        }
+
+        .produtos-grid {
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .produto-card {
+            background-color: #fff;
+            padding: 30px 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(169, 50, 91, 0.05);
+            border: 1px solid #F8BBD0;
+        }
+
+        .produto-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: #A9325B;
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .produto-card p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .btn-card {
+            display: inline-block;
+            background-color: #D4AF37; /* Dourado */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        
+        .btn-card:hover {
+            background-color: #b8962e;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #F8BBD0;
+            color: #A9325B;
+            font-size: 13px;
+            margin-top: 50px;
+            border-top: 2px solid #D4AF37;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">C&S Encanto<span>Doces • Cestas • Mimos</span></div>
+    </header>
+
+    <section class="hero">
+        <h1>Um mimo pra adoçar, e um presente pra encantar.</h1>
+        <p>Transformando carinho em presentes especiais em São Sebastião.</p>
+        
+        <!-- Link do Direct do Instagram dela -->
+        <a href="https://ig.me/m/csencantos_" class="btn-whatsapp" target="_blank">Pedir pela DM</a>
+    </section>
+
+    <h2 class="section-title">Nossas Delícias</h2>
+    
+    <section class="produtos-grid">
+        <div class="produto-card">
+            <h3>🍫 Doces Artesanais</h3>
+            <p>Chocolates, brigadeiros gourmet e doces finos feitos com ingredientes selecionados.</p>
+            <a href="https://ig.me/m/csencantos_" class="btn-card" target="_blank">Ver Opções</a>
+        </div>
+
+        <div class="produto-card">
+            <h3>🎁 Cestas Personalizadas</h3>
+            <p>Montamos a cesta perfeita para surpreender quem você ama, com o seu toque especial.</p>
+            <a href="https://ig.me/m/csencantos_" class="btn-card" target="_blank">Ver Opções</a>
+        </div>
+
+        <div class="produto-card">
+            <h3>🧸 Mimos e Lembranças</h3>
+            <p>Ursinhos, canecas e mimos fofos para acompanhar o seu presente.</p>
+            <a href="https://ig.me/m/csencantos_" class="btn-card" target="_blank">Ver Opções</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 C&S Encanto. Todos os direitos reservados.</p>
+        <p>📍 São Sebastião</p>
+    </footer>
+
+</body>
+</html>
